@@ -41,6 +41,16 @@ export default {
 }
 </script>
 
+<script>
+import LibroList from '../components/libroList.vue'
+
+export default {
+  components: {
+    LibroList
+  }
+}
+</script> 
+
 <style scoped>
 /* style */
 </style>
