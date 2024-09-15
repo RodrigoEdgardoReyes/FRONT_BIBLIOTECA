@@ -1,4 +1,6 @@
 <template>
+    <h1 class="text-3xl font-bold text-gray-400 mb-6">Gestión de Libros</h1>
+
   <form @submit.prevent="submitForm" class="max-w-md mx-auto bg-white p-8 rounded shadow">
     <div class="mb-4">
       <label for="titulo" class="block text-gray-700 font-bold mb-2">Título:</label>
