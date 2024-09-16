@@ -25,7 +25,7 @@ export default {
       // Cargar la lista de préstamos
       const prestamosResponse = await fetch('api/prestamos');
       const prestamosData = await prestamosResponse.json();
-      // verifico si obtengo los prestamos correctamente
+      // verifico si obtengo los prestamos correctamente.
       console.log('Prestamos obtenidos:', prestamosData.prestamo); 
       this.prestamos = prestamosData.prestamo || [];
     } catch (error) {
