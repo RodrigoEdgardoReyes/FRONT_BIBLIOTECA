@@ -1,10 +1,10 @@
-<!-- <template>
+<template>
   <div class="container mx-auto p-8">
     <h1 class="text-3xl font-bold text-gray-400 mb-6">Gestión de Libros</h1>
     <LibroForm />
     <LibroList />
   </div>
-</template> -->
+</template>
 
 <script>
 import LibroForm from '../components/libroForm.vue'
