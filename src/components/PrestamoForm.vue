@@ -56,7 +56,7 @@ export default {
     const data = await response.json();
     console.log('Libros obtenidos:', data);
 
-    // Asignar la lista de libros al array libros
+    // Asignar la lista de libros al array libros.
     this.libros = data.libros;
   } catch (error) {
     console.error('Error en mounted:', error);
