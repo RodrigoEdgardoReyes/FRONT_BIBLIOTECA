@@ -35,7 +35,7 @@
         this.libros = libroData.libros || [];
         
       } catch (error) {
-        console.error('Error fetching data:', error);
+        console.error('Error fetching dataa:', error);
       }
     }
   }
