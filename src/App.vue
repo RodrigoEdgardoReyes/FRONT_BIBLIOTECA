@@ -8,7 +8,7 @@ export default {
   <div>
     <router-view/>
   </div>
-  <div id="app">.
+  <div id="app">..
     <router-view/>
   </div>
 </template>
