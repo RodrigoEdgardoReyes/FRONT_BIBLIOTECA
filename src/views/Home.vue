@@ -1,1 +1,1 @@
-<template>home antiguo</template>
+<template>home antiguo.</template>
