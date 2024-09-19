@@ -60,7 +60,7 @@
       </div>
       <div class="w-full h-full bg-gray-400">
         <div class="h-[50px] bg-gray-100 flex items-center shadow-sm px-[20px] w-full py-[10px] z-10 border-b ">
-          <!-- Hambuger menu. -->
+          <!-- Hambuger menu.. -->
           <div class="cursor-pointer w-[30px]" @click="toggleSideBar">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class=" w-[25px] h-[25px]">
               <!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
