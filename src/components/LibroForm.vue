@@ -49,7 +49,7 @@ export default {
         });
 
         const responseData = await response.json();
-        // verifico la respuesta de la api.
+        // verifico la respuesta de la api..
       console.log('API response:', responseData); 
 
         if (response.ok) {
