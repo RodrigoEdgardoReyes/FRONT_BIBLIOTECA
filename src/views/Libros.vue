@@ -8,7 +8,7 @@
 
 <script>
 import LibroForm from '../components/libroForm.vue'
-// import LibroForm from '../components/LibroForm.vue'.
+// import LibroForm from '../components/LibroForm.vue'..
 import LibroList from '../components/libroList.vue'
 
 export default {
