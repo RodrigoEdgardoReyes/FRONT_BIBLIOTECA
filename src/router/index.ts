@@ -10,7 +10,7 @@ import home from '../components/home.vue'
 import profile from '../components/profile.vue'
 
 const routes = [
-  // { path: '/', name: 'Home', component: Home },
+  // { path: '/', name: 'Home', component: Home },.
   { path: '/libros', name: 'Libros', component: Libros },
   { path: '/prestamos', name: 'Prestamos', component: Prestamos },
   // { path: '/lista', name: 'Lista', component: Lista }
