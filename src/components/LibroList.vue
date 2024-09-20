@@ -31,7 +31,7 @@ export default {
       // 
       console.log('Libros obtenidos:', libroData.libros);
       
-      // Asigna los libros a la data del componente.
+      // Asigna los libros a la data del componente..
       this.libros = libroData.libros || [];
       
     } catch (error) {
