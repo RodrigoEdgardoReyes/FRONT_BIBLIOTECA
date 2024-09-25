@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-black">profileee</div>
+    <div class="bg-black">profile</div>
 </template>
 
 <script>
