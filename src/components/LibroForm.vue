@@ -54,7 +54,7 @@ export default {
 
         if (response.ok) {
           alert('Libro guardado con éxito');
-          // Limpiar el formulario
+          // Limpiar el formulario.
           this.titulo = '';
           this.autor = '';
           this.anoEdicion = '';
