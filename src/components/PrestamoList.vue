@@ -22,7 +22,7 @@ export default {
   },
   async mounted() {
     try {
-      // Cargar la lista de préstamos
+      // Cargar la lista de préstamos.
       const prestamosResponse = await fetch('api/prestamos');
       const prestamosData = await prestamosResponse.json();
       // verifico si obtengo los prestamos correctamente..
