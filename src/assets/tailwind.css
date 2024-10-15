@@ -1,3 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Tus estilos personalizados aquí */
+/* body {
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .custom-bg {
+    background-color: #f0f0f0;
+  } */
