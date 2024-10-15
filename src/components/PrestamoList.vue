@@ -1,5 +1,5 @@
 <template>
-  <div class="max-w-4xl mx-auto mt-8">
+  <div class="max-w-4xl mx-auto mt-8 container">
     <ul class="space-y-4">
       <li v-for="prestamo in prestamos" :key="prestamo.id" class="bg-black p-4 rounded-lg shadow-md">
         <p class="text-lg font-semibold"> Nombre:
@@ -39,3 +39,8 @@ export default {
   }
 };
 </script>
+<style scoped>
+  .container{
+    margin-top: 16%;
+  }
+</style>
