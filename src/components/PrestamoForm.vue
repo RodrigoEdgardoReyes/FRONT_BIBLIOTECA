@@ -1,4 +1,5 @@
 <template>
+  <div class="container">
   <form @submit.prevent="submitForm" class="space-y-6 bg-white p-6 rounded-lg shadow-lg max-w-lg mx-auto mt-8">
     <div>
       <label for="nombre" class="block text-sm font-medium text-gray-700">Nombre de la persona a prestar:</label>
@@ -31,6 +32,7 @@
       Guardar
     </button>
   </form>
+</div>
 </template>
 
 <script>
@@ -95,3 +97,16 @@ async submitForm() {
 
 };
 </script>
+<style scoped>
+.container {
+  /* max-height: 100vh; */
+  /* overflow-y: auto; */
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* justify-content: space-between; */
+  /* height:  0vh; */
+  margin-top: -9%;
+  /* align-items: center; */
+  /* justify-content: center; */
+}
+</style>
