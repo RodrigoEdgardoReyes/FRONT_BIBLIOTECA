@@ -1,5 +1,8 @@
 <template>
-    <div class="w-screen h-screen flex">
+      <div class="w-screen flex content">
+
+     <!-- <div class="w-screen h-screen flex"> -->
+      <!-- <div class="w-full h-full flex"> -->
       <!-- Side bar -->
       <div class="w-[400px] h-full bg-gray-200 text-white" v-show="showSide">
         <div class="h-[50px] bg-gray-900 flex justify-start  items-center ">
@@ -92,9 +95,9 @@
             <!-- User login -->
             <div class="w-[200px] ">
               <div class="flex items-center justify-start space-x-4" @click="toggleDrop">
-                <img class="w-10 h-10 rounded-full border-2 border-gray-50" src="https://yt3.ggpht.com/hqsxh-Vnbw9OK0_X4DAWh6RkmEUVnL-82SRCyh-IKr9fIXR8zhUCRdBEwgWWL_14q_L8Piod=s108-c-k-c0x00ffffff-no-rj" alt="">
+                <img class="w-10 h-10 rounded-full border-2 border-gray-50" src="../../image/image1.png" alt="">
                 <div class="font-semibold dark:text-white text-left">
-                  <div>Madona ,Dev OP</div>
+                  <div class="dark:text-gray-500">DEYMON</div>
                   <div class="text-xs text-gray-500 dark:text-gray-400">Admin</div>
                 </div>
               </div>
@@ -147,5 +150,17 @@
   </script>
   
   <style>
-  
-  </style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html, body, #app {
+    width: 100;
+    height: 100;
+    padding: 0;
+    margin: 0;
+  }
+
+</style>
