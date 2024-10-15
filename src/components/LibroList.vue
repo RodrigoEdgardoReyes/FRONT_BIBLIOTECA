@@ -41,7 +41,7 @@ export default {
 }
 </script>
 
-<script>
+<!-- <script>
 import LibroList from '../components/libroList.vue'
 
 export default {
@@ -49,7 +49,7 @@ export default {
     LibroList
   }
 }
-</script> 
+</script>  -->
 
 <style scoped>
 /* style */
