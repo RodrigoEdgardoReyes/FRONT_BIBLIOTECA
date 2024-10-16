@@ -1,13 +1,16 @@
 <template>
-    <div class="bg-black">profile.</div>
+    <div class="bg-black">profilee.</div>
+    <Profile/>
 </template>
 
 <script>
 export default {
-
+    components: {
+        Profile
+    }
 }
 </script>
 
-<style>
-
+<style scoped>
+ 
 </style>
