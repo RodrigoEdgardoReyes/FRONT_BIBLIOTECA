@@ -35,6 +35,7 @@ export default {
   methods: {
     async submitForm() {
       try {
+        // Obtengo los libros y los cargo en el selector
         const response = await fetch('/api/libros', {
           method: 'POST',
           headers: {
