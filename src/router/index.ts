@@ -5,7 +5,7 @@ import Home from '../views/Home.vue'
 import Libros from '../views/Libros.vue'
 import Lista from '../components/LibroForm.vue'
 import Prestamos from '../views/Prestamos.vue'
-import ListLibros from '../views/Lista.vue'
+import LibroList from '../views/LibroList.vue'
 import dashboard from '../components/master/dashboard.vue'
 import home from '../components/home.vue'
 import profile from '../components/profile.vue'
@@ -44,7 +44,7 @@ const routes = [
   {
     path: 'lista',
     name: 'Lista',
-    component:Libros
+    component:LibroList
   }
   ]
   }
