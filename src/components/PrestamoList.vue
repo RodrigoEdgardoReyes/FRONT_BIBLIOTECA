@@ -22,8 +22,9 @@ export default {
   },
   async mounted() {
     try {
-      // Cargar la lista de préstamos.
+      // Carga la lista de préstamos.
       const prestamosResponse = await fetch('api/prestamos');
+      // obtengo la data en formato json
       const prestamosData = await prestamosResponse.json();
       // verifico si obtengo los prestamos correctamente.
       console.log('Prestamos obtenidos:', prestamosData.prestamo); 
