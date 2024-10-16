@@ -23,6 +23,7 @@ export default {
   },
   async mounted() {
     try {
+      // Obtengo la lista de libros
       const libroResponse = await fetch('api/libros');
       
       // 
