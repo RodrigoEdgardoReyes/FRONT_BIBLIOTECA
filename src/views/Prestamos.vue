@@ -2,7 +2,7 @@
   <div class="container mx-auto p-8">
     <h1 class="text-2xl font-bold text-center mb-6">Préstamoss.</h1>
     <PrestamoForm />
-    <PrestamoList />
+    <!-- <PrestamoList /> -->
   </div>
 </template>
 
@@ -14,7 +14,7 @@ import PrestamoList from '../components/PrestamoList.vue'
 export default {
   components: {
     PrestamoForm,
-    PrestamoList
+    // PrestamoList
   }
 }
 </script>
