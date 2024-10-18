@@ -1,4 +1,5 @@
 <template>
+    <!-- FALTA -->
     <!-- <div class="text-3xl text-black">Listado de libros existentes</div> -->
     <LibroList/>
 </template>
