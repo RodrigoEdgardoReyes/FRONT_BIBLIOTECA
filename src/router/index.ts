@@ -1,7 +1,6 @@
 // @ts-nocheck
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../views/Home.vue'
-// import Libros from '../components/LibroForm.vue'
 import Libros from '../views/Libros.vue'
 import Lista from '../components/LibroForm.vue'
 import Prestamos from '../views/Prestamos.vue'
