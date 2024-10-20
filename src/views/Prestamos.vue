@@ -14,7 +14,7 @@ import PrestamoList from '../components/PrestamoList.vue'
 export default {
   components: {
     PrestamoForm,
-    // PrestamoList
+    // PrestamoList.
   }
 }
 </script>
