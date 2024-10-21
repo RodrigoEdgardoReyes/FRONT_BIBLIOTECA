@@ -31,7 +31,7 @@ import LibroList from '../components/libroList.vue'
 export default {
   components: {
     LibroForm,
-    LibroList
+    // LibroList
   }
 }
 </script>
