@@ -14,7 +14,7 @@ const routes = [
   // { path: '/', name: 'Home', component: Home },.
   { path: '/libros', name: 'Libros', component: Libros },
   { path: '/prestamos', name: 'Prestamos', component: Prestamos },
-  // { path: '/lista', name: 'Lista', component: Lista }
+  // { path: '/lista', name: 'Lista', component: Lista. }
   {
     name: 'Dashboard',
     path: '/',
