@@ -41,7 +41,5 @@ export default {
 };
 </script>
 <!-- <style scoped>
-  .container{
-    margin-top: -5%;
-  }
+
 </style> -->
