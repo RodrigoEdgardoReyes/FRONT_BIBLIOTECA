@@ -99,15 +99,5 @@ async submitForm() {
 };
 </script>
 <style scoped>
-/* .container {
-  /* max-height: 100vh;.*/
-  /* overflow-y: auto; */
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* justify-content: space-between; */
-  /* height:  0vh; */
-  /* margin-top: -9%; */
-  /* align-items: center; */
-  /* justify-content: center; 
-} */
+
 </style>
