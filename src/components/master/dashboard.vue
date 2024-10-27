@@ -2,7 +2,7 @@
   <div class="w-screen flex content">
 
     <!-- <div class="w-screen h-screen flex"> -->
-    <!-- <div class="w-full h-full flex"> -->
+    <!-- <div class="w-full h-full flex"> --->
     <!-- Side bar -->
     <div class="w-[400px] h-full bg-gray-200 text-white" v-show="showSide">
       <div class="h-[50px] bg-gray-900 flex justify-start  items-center ">
