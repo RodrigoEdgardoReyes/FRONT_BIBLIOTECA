@@ -1,6 +1,6 @@
 <template>
 
-    <!-- Si descomento esto el texto queda estatico  -->
+    <!-- Si descomento esto el texto queda estatico. -->
     <!-- <div class="bg-black content">Listado de prestamos</div> -->
 
     <div  class="h-screen flex flex-col content">
