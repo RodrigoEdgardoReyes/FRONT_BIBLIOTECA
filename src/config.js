@@ -1,4 +1,4 @@
-// src/config.js
+// src/config.js.
 // si deseo usar esta url en otro archivo lo importo de la siguiente manera 
 // import { API_BASE_URL } from '../config';
 
