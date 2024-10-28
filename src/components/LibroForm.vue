@@ -1,5 +1,6 @@
 <template>
-    <!-- <h1 class="text-3xl font-bold text-gray-400 mb-6">Gestión de Libros.</h1> -->
+  <!-- imp -->
+  <!-- <h1 class="text-3xl font-bold text-gray-400 mb-6">Gestión de Libros.</h1> -->
 
   <form @submit.prevent="submitForm" class="max-w-md mx-auto bg-white p-8 rounded shadow">
     <div class="mb-4">
@@ -51,7 +52,7 @@ export default {
 
         const responseData = await response.json();
         // verifico la respuesta de la api.
-      console.log('API response:', responseData); 
+        console.log('API response:', responseData);
 
         if (response.ok) {
           alert('Libro guardado con éxito');
