@@ -51,6 +51,7 @@ export default {
   async mounted() {
     try {
     console.log('Fetching libros...');
+    
     // Cargo la lista de libros
     const response = await fetch(`api/libros`);
     console.log('Response status:', response.status);
