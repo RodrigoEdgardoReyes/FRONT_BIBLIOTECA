@@ -6,8 +6,7 @@
 <template>
     <div class="h-screen flex flex-col content">
         <!-- <header class="bg-gray-800 text-white p-4">
-      <div></div>
-    </header> --->
+        </header> --->
         <div class="flex-grow overflow-auto bg-gray-100">
             <router-view>
                 <LibroList />
