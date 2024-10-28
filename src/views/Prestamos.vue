@@ -15,12 +15,10 @@
 <script>
 // rutas de los componentes.
 import PrestamoForm from '../components/PrestamoForm.vue'
-// import PrestamoList from '../components/PrestamoList.vue'
 
 export default {
   components: {
     PrestamoForm,
-    // PrestamoList
   }
 }
 </script>
