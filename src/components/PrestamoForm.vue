@@ -70,6 +70,7 @@ methods: {
 async submitForm() {
   try {
     console.log('Prestamo enviado')
+    
     //  .. token = localStorage.getItem('token');
     const response = await fetch(`api/prestamos`, {
       method: 'POST',
