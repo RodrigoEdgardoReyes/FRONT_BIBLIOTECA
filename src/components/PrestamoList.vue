@@ -1,4 +1,4 @@
-<template>
+<template> 
   <div class="max-w-4xl mx-auto mt-8 container">
     <ul class="space-y-4">
       <li v-for="prestamo in prestamos" :key="prestamo.id" class="bg-black p-4 rounded-lg shadow-md">
@@ -12,7 +12,6 @@
         <button>Detalles</button>
       </li>
     </ul>
-
 
     <!-- Modal de edición -->
     <div v-if="mostrarModal" class="fixed inset-0 flex items-center justify-center bg-gray-800 bg-opacity-50">
@@ -32,8 +31,7 @@
             <input type="date" v-model="prestamoSeleccionado.fechaDevolucion" class="w-full p-2 border rounded" />
           </div>
           <div class="flex justify-end space-x-2">
-            <button type="button" @click="cerrarModal"
-              class="px-4 py-2 bg-gray-400 text-white rounded">Cancelar</button>
+            <button type="button" @click="cerrarModal" class="px-4 py-2 bg-gray-400 text-white rounded">Cancelar</button>
             <button type="submit" class="px-4 py-2 bg-blue-600 text-white rounded">Guardar</button>
           </div>
         </form>
@@ -47,21 +45,15 @@ export default {
   data() {
     return {
       prestamos: [],
-      mostrarModal: false, // Controla la visibilidad del modal
-      prestamoSeleccionado: null // Almacena el prestamo seleccionado para editar
+      mostrarModal: false,
+      prestamoSeleccionado: null
     };
   },
   async mounted() {
     try {
-      // Carga la lista de préstamos..
       const prestamosResponse = await fetch('api/prestamos');
-
-      // obtengo la data en formato json
       const prestamosData = await prestamosResponse.json();
-
-      // verifico por consola si obtengo los prestamos correctamente.
       console.log('Prestamos obtenidos:', prestamosData.prestamo);
-
       this.prestamos = prestamosData.prestamo || [];
     } catch (error) {
       console.error('Error fetching data:', error);
@@ -70,50 +62,58 @@ export default {
   methods: {
     formatFecha(fecha) {
       return fecha ? new Date(fecha).toLocaleDateString() : 'Fecha no disponible';
+    },
 
+    // Convierte fecha al formato "yyyy-MM-dd" para el input de tipo "date"
+    formatFechaInput(fecha) {
+      const date = new Date(fecha);
+      const year = date.getFullYear();
+      const month = String(date.getMonth() + 1).padStart(2, '0');
+      const day = String(date.getDate()).padStart(2, '0');
+      return `${year}-${month}-${day}`;
     },
 
     // Método para abrir el modal de edición con el préstamo seleccionado
     edit(prestamo) {
-      this.prestamoSeleccionado = { ...prestamo };  // Crea una copia para editar
-      this.mostrarModal = true;  // Muestra el modal
+      this.prestamoSeleccionado = {
+        ...prestamo,
+        fechaPrestamo: this.formatFechaInput(prestamo.fechaPrestamo),
+        fechaDevolucion: this.formatFechaInput(prestamo.fechaDevolucion)
+      };
+      this.mostrarModal = true;
     },
 
-    // Método para cerrar el modal sin guardar
     cerrarModal() {
       this.mostrarModal = false;
       this.prestamoSeleccionado = null;
     },
 
-    // Método para guardar los cambios del préstamo
     async guardarCambios() {
       try {
-        const response = await fetch(  `${import.meta.env.VITE_API_BASE_URL}/prestamos/${this.prestamoSeleccionado.id}`,
-        {
-          method: 'PUT',
-          headers: {
-            'Content-Type': 'application/json'
-          },
-          body: JSON.stringify(this.prestamoSeleccionado)
-        });
+        const response = await fetch(
+          `${import.meta.env.VITE_API_BASE_URL}/prestamos/${this.prestamoSeleccionado.id}`,
+          {
+            method: 'PUT',
+            headers: {
+              'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(this.prestamoSeleccionado)
+          }
+        );
 
-        if (response.ok) { 
-          // Actualizar el préstamo en la lista
+        if (response.ok) {
           const index = this.prestamos.findIndex(prestamo => prestamo.id === this.prestamoSeleccionado.id);
           if (index !== -1) {
-            this.$set(this.prestamos, index, this.prestamoSeleccionado);  // Actualiza el elemento en el array
+            this.$set(this.prestamos, index, this.prestamoSeleccionado);
           }
-          this.cerrarModal();  // Cierra el modal después de guardar
+          this.cerrarModal();
         } else {
           console.error('Error al guardar los cambios');
         }
       } catch (error) {
         console.error('Error al actualizar el préstamo:', error);
       }
-    },
-  },
+    }
+  }
 };
 </script>
-<!-- <style scoped>
-
-</style> -->
