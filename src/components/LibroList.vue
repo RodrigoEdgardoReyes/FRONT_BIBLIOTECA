@@ -47,7 +47,7 @@ import LibroList from '../components/libroList.vue'
 
 export default {
   components: {
-    LbroList.
+    LbroList
   }
 }
 </script>.  -->
