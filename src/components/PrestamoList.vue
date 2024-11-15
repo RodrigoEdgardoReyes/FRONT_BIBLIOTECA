@@ -73,7 +73,7 @@ export default {
       return `${year}-${month}-${day}`;
     },
 
-    // Método para abrir el modal de edición con el préstamo seleccionado
+    // Método para abrir el modal de edición con el préstamo seleccionado 
     edit(prestamo) {
       this.prestamoSeleccionado = {
         ...prestamo,
