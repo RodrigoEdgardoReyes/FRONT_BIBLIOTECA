@@ -38,7 +38,7 @@
 <script>
 export default {
   data() {
-    return {
+    return { 
       nombre: '',
       libroId: null,
       fechaPrestamo: '',
