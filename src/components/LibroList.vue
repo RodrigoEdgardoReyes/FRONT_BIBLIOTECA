@@ -43,7 +43,7 @@ export default {
 </script>
 
 <!-- <script>
-import LibroList from '../components/libroList.vue'
+import LibroList from '../components/libroList.vue' 
 
 export default {
   components: {
